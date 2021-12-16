@@ -1,26 +1,98 @@
 type Info = {
   img: string;
   text: string;
+  date: string;
 } [];
 
 export const info: Info = [
   {
-    img: "elden_ring.png",
-    text: `
-      Texto de prueba 1 para la primera imagen
-      Texto de prueba 1 para la primera imagen
-      Texto de prueba 1 para la primera imagen
-      Texto de prueba 1 para la primera imagen
-      Texto de prueba 1 para la primera imagen
-      Texto de prueba 1 para la primera imagen
-    `,
-  },
-  {
     img: "ds2.jpg",
     text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
   },
   {
     img: "ds3.jpg",
     text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
+  },
+  {
+    img: "ds2.jpg",
+    text: "Texto de prueba 2 para la primera imagen",
+    date: '21/11/2021'
+  },
+  {
+    img: "ds3.jpg",
+    text: "Texto de prueba 3 para la primera imagen",
+    date: '05/05/2021',
   }
 ];

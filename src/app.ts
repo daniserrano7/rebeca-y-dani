@@ -13,6 +13,7 @@ function initScript() {
   setupSlider();
   setCommentText(0);
   setProgressBarByIndex(0);
+  setTooltipDate(0);
 }
 
 // SLIDER
@@ -26,6 +27,7 @@ function setupSlider() {
   splide.on('move', (newIndex: number, oldIndex: number) => {
     setProgressBarByIndex(newIndex);
     setCommentText(newIndex);
+    setTooltipDate(newIndex);
   
     if (newIndex === TOTAL_IMAGES - 1) {
       activeLastProgressBarCircle();
@@ -87,4 +89,23 @@ function calculateProgressPercentage(imageIndex: number): number {
 function setProgressBar(percentage: number): void {
   const progressBar = document.getElementById("progress-bar");
   progressBar.style.width = `${percentage}%`;
+}
+
+function setTooltipDate(imageIndex: number): void {
+  const slideObject = info[imageIndex];
+  const { date } = slideObject;
+  const dateParts = date.split('/');
+  const unitedStatesDate = new Date([dateParts[1], dateParts[0], dateParts[2]].join('/'));
+  const formatDate = getFormatDate(unitedStatesDate);
+  const tooltipElement = document.getElementById("tooltip-text");
+  tooltipElement.textContent = formatDate;
+}
+
+function getFormatDate(date: Date): string {
+  const months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  const formatDate = `${day} ${month} ${year}`;
+  return formatDate;
 }
