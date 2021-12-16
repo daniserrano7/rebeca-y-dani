@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Vanilla JS App</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src='app.js'></script>
+    </head>
+    <body>
+        <div class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                          <img src="assets/img/eldenring_title.png" />
+                      </li>
+                      <li class="splide__slide">Slide 02</li>
+                      <li class="splide__slide">Slide 03</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="date-bar">
+            <div class="date-bar-container">
+                <span class="date-bar-circle date-bar-circle-start date-bar-circle-active"></span>
+                <div id="progress-bar" class="date-bar-progress"></div>
+                <span class="date-bar-circle date-bar-circle-end"></span>
+            </div>
+        </div>
+    </body>
+</html>

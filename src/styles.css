@@ -1,0 +1,76 @@
+:root {
+    --date-bar-size: 5px;
+    --date-bar-circle-size: 16px;
+    --color-blue: rgb(0, 153, 255);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.splide {
+    background-color: red;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.splide__track,
+.splide__list,
+.splide__slide {
+    height: 100%;
+}
+
+.splide__slide {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    background-color: blue;
+}
+
+.date-bar {
+    width: 100%;
+    height: var(--date-bar-size);
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.date-bar-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: lightgrey;
+}
+
+.date-bar-progress {
+    width: 70%;
+    height: 100%;
+    background-color: var(--color-blue);
+}
+
+.date-bar-circle {
+    position: absolute;
+    top: calc(0px - var(--date-bar-circle-size) / 2 + var(--date-bar-size) / 2);
+    width: var(--date-bar-circle-size);
+    height: var(--date-bar-circle-size);
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.date-bar-circle-active {
+    background-color: var(--color-blue);
+}
+
+.date-bar-circle-start {
+    left: calc(0px - var(--date-bar-circle-size));
+}
+
+.date-bar-circle-end {
+    right: calc(0px - var(--date-bar-circle-size));
+}
