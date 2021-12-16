@@ -9,10 +9,16 @@ html, body {
     margin: 0;
 }
 
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+
 .splide {
-    background-color: red;
-    height: 80%;
-    box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .splide__track,
@@ -22,22 +28,27 @@ html, body {
 }
 
 .splide__slide {
-    background-color: purple;
+    /* background-color: purple; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-color: blue; */
 }
 
-img {
-    width: 100%;
-    background-color: blue;
+.comment {
+    /* background-color: black; */
+    color: white;
+    padding: 20px 25px 30px;
 }
 
 .date-bar {
     width: 100%;
     height: var(--date-bar-size);
     box-sizing: border-box;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 0 40px;
 }
 
@@ -46,12 +57,15 @@ img {
     height: 100%;
     position: relative;
     background-color: lightgrey;
+    z-index: 1;
 }
 
 .date-bar-progress {
-    width: 70%;
+    width: 0;
     height: 100%;
     background-color: var(--color-blue);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .date-bar-circle {
@@ -68,9 +82,40 @@ img {
 }
 
 .date-bar-circle-start {
-    left: calc(0px - var(--date-bar-circle-size));
+    left: calc(1px - var(--date-bar-circle-size));
 }
 
 .date-bar-circle-end {
-    right: calc(0px - var(--date-bar-circle-size));
+    right: calc(1px - var(--date-bar-circle-size));
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100% + var(--date-bar-size) + 5px);
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }

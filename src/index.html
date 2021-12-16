@@ -8,26 +8,39 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css" />
         <link rel="stylesheet" href="styles.css" />
-        <script type="module" src='app.js'></script>
+        <script type="module" src='app.ts'></script>
     </head>
     <body>
-        <div class="splide">
-            <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide">
-                          <img src="assets/img/eldenring_title.png" />
-                      </li>
-                      <li class="splide__slide">Slide 02</li>
-                      <li class="splide__slide">Slide 03</li>
-                  </ul>
-            </div>
-        </div>
-        <div class="date-bar">
-            <div class="date-bar-container">
-                <span class="date-bar-circle date-bar-circle-start date-bar-circle-active"></span>
-                <div id="progress-bar" class="date-bar-progress"></div>
-                <span class="date-bar-circle date-bar-circle-end"></span>
-            </div>
-        </div>
+        <main class="app">
+            <section class="splide">
+                <div class="splide__track">
+                    <ul id="carousel-list" class="splide__list">
+                        <!-- <li class="splide__slide">
+                            <img src="assets/img/elden_ring.png" />
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+            <section class="comment">
+                <div id="comment-text">
+                    Aute laboris reprehenderit minim consequat aute. Eiusmod proident in 
+                    exercitation mollit cillum proident est incididunt ut Lorem ipsum nostrud. 
+                    Nostrud incididunt proident cupidatat id do dolor tempor consectetur aute minim. 
+                    Minim occaecat ullamco ad proident aliquip elit est. Ex veniam ut tempor do ad 
+                    veniam tempor id velit in enim labore anim.
+                </div>
+            </section>
+            <section class="date-bar">
+                <div class="date-bar-container">
+                    <span class="date-bar-circle date-bar-circle-start date-bar-circle-active"></span>
+                    <div id="progress-bar" class="date-bar-progress">
+                        <span class="tooltip">
+                            <span class="tooltip-text">HOLA</span>
+                        </span>
+                    </div>
+                    <span class="date-bar-circle date-bar-circle-end"></span>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

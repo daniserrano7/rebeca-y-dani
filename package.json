@@ -12,9 +12,11 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@parcel/resolver-glob": "^2.0.1",
         "parcel": "^2.0.1"
     },
     "dependencies": {
-        "@splidejs/splide": "^3.6.9"
+        "@splidejs/splide": "^3.6.9",
+        "babel-plugin-transform-glob-import": "^1.0.1"
     }
 }
