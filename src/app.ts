@@ -63,6 +63,17 @@ function setCommentText(slideIndex: number): void {
   const commentElement = document.getElementById("comment-text");
   const comment = info[slideIndex].text;
   commentElement.textContent = comment;
+
+  const placeElement = document.getElementById("comment-place");
+  const place = info[slideIndex].place;
+
+  if (place) {
+    console.log('IF PLACE: ', place)
+    placeElement.textContent = '-' + place;
+    placeElement.style.display = "block";
+  } else {
+    placeElement.style.display = "none";
+  }
 }
 
 // PROGRESS BAR
