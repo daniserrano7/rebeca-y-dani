@@ -49,6 +49,7 @@ html, body {
     padding: 20px 30px;
     color: white;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .splide {
