@@ -14,15 +14,15 @@ function initScript() {
   setCommentText(0);
   setProgressBarByIndex(0);
   setTooltipDate(0);
-}
 
-// INIT SCREEN
-document.getElementById("init-screen-button").addEventListener('click', () => {
-  const screenElement = document.getElementById("init-screen");
-  screenElement.style.opacity = "0";
-  // screenElement.style.display = "none";
-  screenElement.style.zIndex = "-1";
-})
+  // INIT SCREEN
+  document.getElementById("init-screen-button").addEventListener('click', () => {
+    const screenElement = document.getElementById("init-screen");
+    screenElement.style.opacity = "0";
+    screenElement.style.zIndex = "-1";
+    console.log('CLICK BUTTON');
+  });
+}
 
 // SLIDER
 function setupSlider() {
