@@ -16,6 +16,14 @@ function initScript() {
   setTooltipDate(0);
 }
 
+// INIT SCREEN
+document.getElementById("init-screen-button").addEventListener('click', () => {
+  const screenElement = document.getElementById("init-screen");
+  screenElement.style.opacity = "0";
+  // screenElement.style.display = "none";
+  screenElement.style.zIndex = "-1";
+})
+
 // SLIDER
 function setupSlider() {
   var splide = new Splide('.splide', {
@@ -69,7 +77,7 @@ function setCommentText(slideIndex: number): void {
 
   if (place) {
     console.log('IF PLACE: ', place)
-    placeElement.textContent = '-' + place;
+    placeElement.textContent = '- ' + place;
     placeElement.style.display = "block";
   } else {
     placeElement.style.display = "none";

@@ -20,6 +20,37 @@ html, body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+.init-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    text-align: center;
+    z-index: 999;
+    transition: opacity .3s ease, z-index 0s linear .3s;
+}
+
+.init-screen-text {
+    font-size: 20px;
+}
+
+.init-screen-button {
+    font-size: 20px;
+    background-color: var(--color-blue);
+    border: none;
+    margin-top: 40px;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 40px;
+}
+
 .splide {
     flex-grow: 1;
 }

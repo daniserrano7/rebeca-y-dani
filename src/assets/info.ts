@@ -21,7 +21,7 @@ export const info: Info = [
     date: '19/12/2019',
   },
   {
-    img: "IMG-20191220-WA0002.jpg",
+    img: "IMG-20191220-WA0002.jpeg",
     text: `La noches se volvió más intensa y apasionante de lo que hubiera imaginado.
       Ese fue el principio de algo hermoso <3`,
     date: '19/12/2019',
@@ -60,10 +60,16 @@ export const info: Info = [
     date: '2/2/2020'
   },
   {
+    img: "IMG-20200202-WA0009.jpg",
+    text: `Qué raro se me hace ver esta foto, cuando nos conocíamos tan poco y aún nos faltaban 
+      muchas cosas por vivir.`,
+    date: '2/2/2020',
+    place: "Mirador de San Nicolás (Granada)"
+  },
+  {
     img: "IMG-20200202-WA0019.jpg",
     text: `Fue un fin de semana muy especial.`,
     date: '2/2/2020',
-    place: "Mirador de San Nicolás (Granada)"
   },
   {
     img: "IMG-20200308-WA0015.jpg",
@@ -116,7 +122,7 @@ export const info: Info = [
   {
     img: "IMG-20210109-WA0040.jpg",
     text: `Por cierto, aún era navidad. Iniciamos formalmente la tradición de Día de Reyes 
-      con tortitas. En esta foto estamos con un mercadillo navideña; probáblemente en tu top 3 
+      con tortitas. En esta foto estamos en un mercadillo navideño; probáblemente en tu top 3 
       de cosas favoritas del mundo después del queso y de los pajaritos.`,
     date: '9/1/2021',
     place: "Puerto de Málaga"
@@ -130,8 +136,8 @@ export const info: Info = [
   },
   {
     img: "IMG-20210313-WA0016.jpg",
-    text: `¡Día de pajareo! Como me dejas arrastrarme a tus cosas... Pero fue muy divertido, la verdad 
-      vi muchos bichos voladores que ni sabía que existían. E hicimos la ruta de senderismo más cutre 
+    text: `¡Día de pajareo! Cómo me dejas arrastrarme a tus cosas... Pero fue muy divertido, la verdad. 
+      Vi muchos bichos voladores que ni sabía que existían. E hicimos la ruta de senderismo más cutre 
       de la historia.`,
     date: '13/3/2021',
     place: "Laguna Fuente de Piedra (Málaga)"
@@ -221,15 +227,15 @@ export const info: Info = [
     place: "Pedregalejo (Málaga)"
   },
   {
-    img: "IMG-20210630-WA0000.jpg",
+    img: "IMG-20210719_221108.jpg",
     text: `<3 <3 <3 El mejor cumpleaños de mi vida. Me conoces tan bien y le pones tanto amor 
       a las cosas. La yincana, las pruebas, las fotitos, las luces... No podía ser mejor. Eres 
-      mejor. Te quiero.`,
+      la mejor. Te quiero.`,
     date: '19/7/2021'
   },
   {
     img: "IMG-20210806-WA0017.jpg",
-    text: `¡Pero mira qué mujer por dios! Eres guapísimaaa. Hasta me intimidas con esa mirada.`,
+    text: `¡Pero mira qué mujer por dios! Eres guapísisimaaa. Hasta me intimidas con esa mirada.`,
     date: '6/8/2021'
   },
   {
@@ -243,7 +249,7 @@ export const info: Info = [
   {
     img: "IMG-20210820-WA0000.jpg",
     text: `Vaya mala suerte tengo, amor. Todo me pasa a mí. Menos mal que estás ahí para cuidarme. 
-      al menos tengo el recuerdo de esta foto ridícula y graciosa.`,
+      Al menos tengo el recuerdo de esta foto ridícula y graciosa.`,
     date: '17/8/2021',
     place: "Algeciras (Cádiz)"
   },
@@ -292,7 +298,7 @@ export const info: Info = [
     place: "Pisa (Italia)"
   },
   {
-    img: "IMG-20211018-WA0014.jpg",
+    img: "IMG-20211018-WA003.jpg",
     text: `No olvidaré el día que pasamos en Portovenere. Nuestra primera toma de contacto con la 
       Cinque Terre y fue maravilloso. El helado gigante, el paseo en barco y las gaviotas volando 
       al lado de nuestras cabezas.`,
@@ -355,8 +361,7 @@ export const info: Info = [
     img: "z_finale.jpg",
     text: `Feliz aniversario, amor. Por todos los años que nos quedan de regalos frikis, cosas 
       cuquis y momentos bonitos. TE QUIERO`,
-    date: '19/12',
-    place: "Livorno (Italia)"
+    date: '19/12'
   },
 
 ];
